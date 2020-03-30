@@ -1,0 +1,47 @@
+Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Footprint~String~Footprint~100|Field=LibRef~String~LibRef~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~电流测试工装板.PrjPcb|ReportField=ProjectFullPath~E:\工作\项目\硬件\电流测试工装板.PrjPcb|ReportField=Title~Bill of Materials For Project [电流测试工装板.PrjPcb] (No PCB Document Selected)|ReportField=TotalQuantity~98|ReportField=ReportTime~11:47:35|ReportField=ReportDate~2019/12/30|ReportField=ReportDateTime~2019/12/30 11:47:35|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=~CheckedBy|ReportField=Address1~深圳市南山区深南路万利达大厦2201室|ReportField=Address2~昆山市花桥镇花桥国际商务城绿地大道231弄9号楼杰座大厦2111室|ReportField=Address3~成都市高新区天府二街138号蜀都中心3号楼3110室|ReportField=Address4~浙江省宁波市余姚市冶山路475号1401室|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~#|ReportField=CheckedByDate~#|ReportField=CompanyName~瑞臻信息（深圳）有限公司|ReportField=CurrentDate~2019/12/30|ReportField=CurrentTime~11:42:53|ReportField=Date~#|ReportField=DocumentFullPathAndName~E:\工作\项目\硬件\电流测试工装板.SchDoc|ReportField=DocumentName~电流测试工装板.SchDoc|ReportField=DocumentNumber~|ReportField=DrawnBy~#|ReportField=Engineer~|ReportField=ImagePath~|ReportField=ModifiedDate~2019/12/28|ReportField=ModuleNumber~#|ReportField=ModuleTitle~#|ReportField=Number~|ReportField=Organization~|ReportField=ProductNumber~#|ReportField=ProductTitle~#|ReportField=ProjectName~电流测试工装板.PrjPcb|ReportField=Revision~#|ReportField=Rule~|ReportField=SheetNumber~|ReportField=SheetOf~#|ReportField=SheetTotal~|ReportField=Time~|ReportField=Title~#|ReportField=DataSourceFileName~电流测试工装板.PrjPcb|ReportField=DataSourceFullPath~E:\工作\项目\硬件\电流测试工装板.PrjPcb
+0.1uF±10%/50V|瓷片电容-0.1uF-±10%-16V-X5R-0402|C1|c0402|1.2.04.05.0169|1
+1uF|Capacitor,Ceramic,0603-16V-X5R-104-K-YAGEO|C2|C0402|Cap|1
+0.1uF|Capacitor,Ceramic,0603-16V-X5R-104-K-YAGEO|C3|C0402|Cap|1
+330uF±20%/10V|电解电容_330uF±20%/10V_0.2R_-40~105℃_4000Hours_D6R3H11|C4, C7|CAP_2P_2R5_D6R3H11_W|1.2.04.03.0001|2
+10uF±10%/16V|瓷片电容-10uF-±10%-16V-X5R-0805|C5, C6|c0805|1.2.04.05.0201|2
+100nF|MLCC_47uF±20%_6.3V_X5R_H1.6mm_1206|C8|c0402|1.2.04.05.0001|1
+47uF±20%/6.3V|MLCC_47uF±20%_6.3V_X5R_H1.6mm_1206|C9|C1206|1.2.04.05.0001|1
+1N4148|开关二极管_1N4148_0.3A/100V_Vf=0.5V_SOD123|D1, D2, D3, D5, D7, D8|SOD123_2P_1R6X2R7|1.2.08.01.0002|6
+3.9V/1W|稳压二极管_ZM4730A_3.9V/1W_LL41|D4, D6|LL41_2P_D2R5H5R0|1.2.08.04.0001|2
+LED/红|发光二极管_红色_Vf=2.3V_0603|D9, D10, D11, D12|PZ_1X2P_2R54_Z|1.2.08.02.0002|4
+100mA/15V|自恢复保险丝_0.05A/15V_100A_0.5W_0.5A/1.5s_0603|F1|FUSE0603|1.2.13.03.0001|1
+（mini）||J1|DIP_MINI_USB-1|USB座子-2（mini|1
+Relay-SPDT|Single-Pole Dual-Throw Relay|K1, K2, K3, K4, K5, K6|SRS-XXVDC-SL|Relay-SPDT|6
+轻触开关|轻触开关_12Vdc/50mA_0.25mm_250gf_3.6X6.1X2.5mm_表贴SMD|K7, K8, K9, K10|PZ_1X2P_2R54_Z|1.2.15.01.0001|4
+SWPA6028S4R7MT|Inductor|L1|SMD_INC_2P_6R0X6R0|Inductor|1
+BLM0210B|SI4463模块，不带LNA|M1|FskMode_BL|1.1.01.38.0002|1
+RM-LORA-LF|LORA模块_RM-LORA-PCB11-V2.21_430M~490M_Pout=17dBm_SMD20|M2|LORA_PIN_1|1.1.01.38.0003|1
+Header 2|Header, 2-Pin|P1|HDR1X2|Header 2|1
+Header 6|Header, 6-Pin|P2|HDR1X6|Header 6|1
+被测板|Header, 2-Pin|P3|HDR1X2|Header 2|1
+Header 8|Header, 8-Pin|P4, P5, P6, P7, P8, P9, P10|HDR1X8|Header 8|7
+Header 4|Header, 4-Pin|P11, P12|HDR1X4|Header 4|2
+S8050|三极管	_NPN_S8050_Vceo=25V_Ic=0.5A_β>50_SOT23|Q1, Q2, Q3, Q4, Q5, Q6|SOT23_3P_0R95_1R3X2R9|1.2.08.08.0002|6
+10K±1%|电阻_10K±1%_1/10W_0603|R1, R6, R7, R12, R15, R16|R0603|1.2.03.01.0009|6
+100K±1%|贴片电阻，1K±5%，1/16W，50V，0402|R2, R4, R5|R0402|1.2.03.01.XXX1|3
+390k.|电阻_510R±1%_1/16W_0402|R3|R0402|1.2.03.01.0019|1
+1K±1%|电阻_1K±1%_1/10W_0603|R8, R13, R27, R28|R0603|1.2.03.01.0006|4
+100R±1%|电阻_100R±1%_1/10W_0603|R9|R0603|1.2.03.01.0017|1
+3K±1%|电阻_3K±1%_1/10W_0603|R10|R0603|1.2.03.01.0027|1
+1R|电阻_3K±1%_1/10W_0603|R11|R0603|1.2.03.01.0027|1
+Res Adj1|Variable Resistor|R14|AXIAL-0.7|Res Adj1|1
+10K±5%|电阻_10K±5%_1/16W_0402|R17, R18, R19, R29, R30, R31, R32|R0402|1.2.03.01.0012|7
+1K±5%|电阻_1K±5%_1/16W_0402|R20, R21, R25, R26|R0402|1.2.03.01.0014|4
+0R|电阻_10K±1%_1/10W_0603|R22, R23, R24|R0603|1.2.03.01.0009|3
+NC|电阻_10K±5%_1/16W_0402|R33|R0402|1.2.03.01.0012|1
+MP1471||U1|TSOT23_6P_0R95_1R6X2R9|MP1471|1
+XC6228D252|XC6228D252_LDO稳压_500mA/2.5V_Vmax=7V_SOT23-5|U2|SOT23_5P_0R95_1R6X2R9|1.2.18.07.0003|1
+ht7333|HT7333_LDO稳压_250mA/3.3V_Vmax=12V_SOT89|U3|SOT89_3P_1R5_2R5X4R5|1.2.18.07.0002|1
+LM317-ADJ|HT7333_LDO稳压_250mA/3.3V_Vmax=12V_SOT89|U4|TO252_3P_2R3_6R2X6R7|1.2.18.07.0002|1
+INA180A2||U5|SOT23_5P_0R95_1R6X2R9|INA180A|1
+TL431||U6|SOT23_3P_0R95_1R3X2R9|TL431A|1
+INA180A4||U7|SOT23_5P_0R95_1R6X2R9|INA180A|1
+ADS1115||U8|MSOP_10P_3R0X5R0_P|ADS1115|1
+CH330N||U9|SOP_8P_1R27_3R9X4R9|CH330N|1
+STM8L052R8|MCU_STM8L052R8_Vin=1.8~3.6V_16MHz_Flash/64Kb_RAM/4Kb_8位_E2PROM/256B_LCD8X24_-40~85℃_LQFP6|U10|LQFP_64P_0R5_10R0X10R0|1.2.18.01.0001|1
+SP3485EN|RS485收发器-SP3485EN-支持485收发-SOP8|U11|SOP_8P_1R27_3R9X4R9|1.2.18.09.0173|1

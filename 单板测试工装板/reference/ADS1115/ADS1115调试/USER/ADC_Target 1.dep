@@ -1,0 +1,200 @@
+Dependencies for Project 'ADC', Target 'Target 1': (DO NOT MODIFY !)
+F (.\main.c)(0x554C8544)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o main.o --omf_browse main.crf --depend main.d)
+F (.\stm32f10x_it.c)(0x4EBEACB0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o stm32f10x_it.o --omf_browse stm32f10x_it.crf --depend stm32f10x_it.d)
+F (.\system_stm32f10x.c)(0x4D99A426)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o system_stm32f10x.o --omf_browse system_stm32f10x.crf --depend system_stm32f10x.d)
+F (..\HARDWARE\LED\led.c)(0x5212CB9E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o ..\obj\led.o --omf_browse ..\obj\led.crf --depend ..\obj\led.d)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\HARDWARE\LED\led.h)(0x5212CBA0)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\SYSTEM\sys\sys.h)(0x5212DF32)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x.h)(0x4D783CB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\system_stm32f10x.h)(0x4D783CAA)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x_conf.h)(0x5552AA30)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\HARDWARE\KEY\key.c)(0x5212CB9A)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o ..\obj\key.o --omf_browse ..\obj\key.crf --depend ..\obj\key.d)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x.h)(0x4D783CB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\system_stm32f10x.h)(0x4D783CAA)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x_conf.h)(0x5552AA30)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\HARDWARE\KEY\key.h)(0x5212CB9C)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\SYSTEM\sys\sys.h)(0x5212DF32)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\SYSTEM\delay\delay.h)(0x5212DF28)
+F (..\HARDWARE\LCD\lcd.c)(0x5205DB32)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o ..\obj\lcd.o --omf_browse ..\obj\lcd.crf --depend ..\obj\lcd.d)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\HARDWARE\LCD\lcd.h)(0x51F11E98)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\SYSTEM\sys\sys.h)(0x5212DF32)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x.h)(0x4D783CB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\system_stm32f10x.h)(0x4D783CAA)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x_conf.h)(0x5552AA30)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (C:\Keil\ARM\ARMCC\include\stdlib.h)(0x51C7B744)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\HARDWARE\LCD\font.h)(0x5129922C)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\SYSTEM\usart\usart.h)(0x5212DE8A)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\SYSTEM\delay\delay.h)(0x5212DF28)
+F (..\HARDWARE\ADC\adc.c)(0x5212CB92)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o ..\obj\adc.o --omf_browse ..\obj\adc.crf --depend ..\obj\adc.d)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\HARDWARE\ADC\adc.h)(0x5212CB92)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\SYSTEM\sys\sys.h)(0x5212DF32)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x.h)(0x4D783CB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\system_stm32f10x.h)(0x4D783CAA)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x_conf.h)(0x5552AA30)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\SYSTEM\delay\delay.h)(0x5212DF28)
+F (..\HARDWARE\ads1115\ads115.c)(0x554B76FC)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o ..\obj\ads115.o --omf_browse ..\obj\ads115.crf --depend ..\obj\ads115.d)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\SYSTEM\sys\sys.h)(0x5212DF32)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x.h)(0x4D783CB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\system_stm32f10x.h)(0x4D783CAA)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x_conf.h)(0x5552AA30)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_i2c.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\HARDWARE\ads1115\ads115.h)(0x554B4058)
+F (..\SYSTEM\delay\delay.c)(0x5212DF28)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o ..\obj\delay.o --omf_browse ..\obj\delay.crf --depend ..\obj\delay.d)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\SYSTEM\delay\delay.h)(0x5212DF28)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\SYSTEM\sys\sys.h)(0x5212DF32)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x.h)(0x4D783CB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\system_stm32f10x.h)(0x4D783CAA)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x_conf.h)(0x5552AA30)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\SYSTEM\sys\sys.c)(0x5212DF32)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o ..\obj\sys.o --omf_browse ..\obj\sys.crf --depend ..\obj\sys.d)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\SYSTEM\sys\sys.h)(0x5212DF32)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x.h)(0x4D783CB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\system_stm32f10x.h)(0x4D783CAA)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x_conf.h)(0x5552AA30)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\SYSTEM\usart\usart.c)(0x5212DF34)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o ..\obj\usart.o --omf_browse ..\obj\usart.crf --depend ..\obj\usart.d)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\SYSTEM\sys\sys.h)(0x5212DF32)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x.h)(0x4D783CB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\system_stm32f10x.h)(0x4D783CAA)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x_conf.h)(0x5552AA30)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\SYSTEM\usart\usart.h)(0x5212DE8A)
+I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x51C7B744)
+F (..\CORE\core_cm3.c)(0x4C0C587E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o ..\obj\core_cm3.o --omf_browse ..\obj\core_cm3.crf --depend ..\obj\core_cm3.d)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+F (..\CORE\startup_stm32f10x_hd.s)(0x4D783CDE)(--cpu Cortex-M3 -g --apcs=interwork -I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x--list .\startup_stm32f10x_hd.lst --xref -o ..\obj\startup_stm32f10x_hd.o --depend ..\obj\startup_stm32f10x_hd.d)
+F (..\STM32F10x_FWLib\src\misc.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o ..\obj\misc.o --omf_browse ..\obj\misc.crf --depend ..\obj\misc.d)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x.h)(0x4D783CB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\system_stm32f10x.h)(0x4D783CAA)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x_conf.h)(0x5552AA30)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_adc.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o ..\obj\stm32f10x_adc.o --omf_browse ..\obj\stm32f10x_adc.crf --depend ..\obj\stm32f10x_adc.d)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_adc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x.h)(0x4D783CB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\system_stm32f10x.h)(0x4D783CAA)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x_conf.h)(0x5552AA30)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_fsmc.c)(0x5039863E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o ..\obj\stm32f10x_fsmc.o --omf_browse ..\obj\stm32f10x_fsmc.crf --depend ..\obj\stm32f10x_fsmc.d)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x.h)(0x4D783CB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\system_stm32f10x.h)(0x4D783CAA)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x_conf.h)(0x5552AA30)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_gpio.c)(0x4D79EEC6)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o ..\obj\stm32f10x_gpio.o --omf_browse ..\obj\stm32f10x_gpio.crf --depend ..\obj\stm32f10x_gpio.d)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x.h)(0x4D783CB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\system_stm32f10x.h)(0x4D783CAA)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x_conf.h)(0x5552AA30)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_rcc.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o ..\obj\stm32f10x_rcc.o --omf_browse ..\obj\stm32f10x_rcc.crf --depend ..\obj\stm32f10x_rcc.d)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x.h)(0x4D783CB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\system_stm32f10x.h)(0x4D783CAA)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x_conf.h)(0x5552AA30)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)
+F (..\STM32F10x_FWLib\src\stm32f10x_usart.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\HARDWARE\LED -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\SYSTEM\usart -I..\USER -I..\STM32F10x_FWLib\inc -I..\CORE -I..\HARDWARE\KEY -I..\HARDWARE\LCD -I..\HARDWARE\RTC -I..\HARDWARE\RTC -I..\HARDWARE\WKUP -I..\HARDWARE\ADC -I..\HARDWARE\ads1115-I C:\keil\ARM\RV31\INC-I C:\keil\ARM\CMSIS\Include-I C:\keil\ARM\Inc\ST\STM32F10x-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -o ..\obj\stm32f10x_usart.o --omf_browse ..\obj\stm32f10x_usart.crf --depend ..\obj\stm32f10x_usart.d)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_usart.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x.h)(0x4D783CB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\CORE\core_cm3.h)(0x4D523B58)
+I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x51C7B744)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\system_stm32f10x.h)(0x4D783CAA)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\USER\stm32f10x_conf.h)(0x5552AA30)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_fsmc.h)(0x50388DDC)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_gpio.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_rcc.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\stm32f10x_tim.h)(0x4D783BB4)
+I (F:\2015电子设计大赛准备\王映真芯片调试\ADS1115调试\STM32F10x_FWLib\inc\misc.h)(0x4D783BB4)

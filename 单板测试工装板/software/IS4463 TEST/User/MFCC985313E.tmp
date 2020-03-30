@@ -1,0 +1,12 @@
+#include "SysInitApp.h"
+
+void main(void)
+{   
+    SysClockInit();
+    LED_Init();
+    SPDT_Init();
+    while(1)
+    {
+        
+    }    
+}

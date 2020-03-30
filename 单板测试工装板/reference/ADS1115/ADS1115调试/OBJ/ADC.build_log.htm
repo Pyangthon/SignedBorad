@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.28.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: yan Yang Carter, 1, LIC=V85FJ-UR679-ZESH2-9ATRT-SN40T-SMA3B
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.28.0.0
+Toolchain Path:  D:\SOFTWARE\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.28.0.0
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.36.0
+Dialog DLL:      TARMSTM.DLL V1.66.0.0
+ 
+<h2>Project:</h2>
+E:\WORK_DIR\PROJECT\参考资料\ADS1115\ADS1115调试\USER\ADC.uvproj
+Project File Date:  01/13/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\SOFTWARE\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling stm32f10x_it.c...
+compiling led.c...
+compiling main.c...
+compiling system_stm32f10x.c...
+compiling key.c...
+compiling ads115.c...
+compiling adc.c...
+..\HARDWARE\ADC\adc.c(22): error:  #20: identifier "ADC_InitTypeDef" is undefined
+  	ADC_InitTypeDef ADC_InitStructure; 
+..\HARDWARE\ADC\adc.c(35): warning:  #223-D: function "ADC_DeInit" declared implicitly
+  	ADC_DeInit(ADC1);  //复位ADC1,将外设 ADC1 的全部寄存器重设为缺省值
+..\HARDWARE\ADC\adc.c(37): error:  #20: identifier "ADC_Mode_Independent" is undefined
+  	ADC_InitStructure.ADC_Mode = ADC_Mode_Independent;	//ADC工作模式:ADC1和ADC2工作在独立模式
+..\HARDWARE\ADC\adc.c(40): error:  #20: identifier "ADC_ExternalTrigConv_None" is undefined
+  	ADC_InitStructure.ADC_ExternalTrigConv = ADC_ExternalTrigConv_None;	//转换由软件而不是外部触发启动
+..\HARDWARE\ADC\adc.c(41): error:  #20: identifier "ADC_DataAlign_Right" is undefined
+  	ADC_InitStructure.ADC_DataAlign = ADC_DataAlign_Right;	//ADC数据右对齐
+..\HARDWARE\ADC\adc.c(43): warning:  #223-D: function "ADC_Init" declared implicitly
+  	ADC_Init(ADC1, &ADC_InitStructure);	//根据ADC_InitStruct中指定的参数初始化外设ADCx的寄存器   
+..\HARDWARE\ADC\adc.c(46): warning:  #223-D: function "ADC_Cmd" declared implicitly
+  	ADC_Cmd(ADC1, ENABLE);	//使能指定的ADC1
+..\HARDWARE\ADC\adc.c(48): warning:  #223-D: function "ADC_ResetCalibration" declared implicitly
+  	ADC_ResetCalibration(ADC1);	//使能复位校准  
+..\HARDWARE\ADC\adc.c(50): warning:  #223-D: function "ADC_GetResetCalibrationStatus" declared implicitly
+  	while(ADC_GetResetCalibrationStatus(ADC1));	//等待复位校准结束
+..\HARDWARE\ADC\adc.c(52): warning:  #223-D: function "ADC_StartCalibration" declared implicitly
+  	ADC_StartCalibration(ADC1);	 //开启AD校准
+..\HARDWARE\ADC\adc.c(54): warning:  #223-D: function "ADC_GetCalibrationStatus" declared implicitly
+  	while(ADC_GetCalibrationStatus(ADC1));	 //等待校准结束
+..\HARDWARE\ADC\adc.c(64): warning:  #223-D: function "ADC_RegularChannelConfig" declared implicitly
+  	ADC_RegularChannelConfig(ADC1, ch, 1, ADC_SampleTime_239Cycles5 );	//ADC1,ADC通道,采样时间为239.5周期	  			    
+..\HARDWARE\ADC\adc.c(64): error:  #20: identifier "ADC_SampleTime_239Cycles5" is undefined
+  	ADC_RegularChannelConfig(ADC1, ch, 1, ADC_SampleTime_239Cycles5 );	//ADC1,ADC通道,采样时间为239.5周期	  			    
+..\HARDWARE\ADC\adc.c(66): warning:  #223-D: function "ADC_SoftwareStartConvCmd" declared implicitly
+  	ADC_SoftwareStartConvCmd(ADC1, ENABLE);		//使能指定的ADC1的软件转换启动功能	
+..\HARDWARE\ADC\adc.c(68): warning:  #223-D: function "ADC_GetFlagStatus" declared implicitly
+  	while(!ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC ));//等待转换结束
+..\HARDWARE\ADC\adc.c(68): error:  #20: identifier "ADC_FLAG_EOC" is undefined
+  	while(!ADC_GetFlagStatus(ADC1, ADC_FLAG_EOC ));//等待转换结束
+..\HARDWARE\ADC\adc.c(70): warning:  #223-D: function "ADC_GetConversionValue" declared implicitly
+  	return ADC_GetConversionValue(ADC1);	//返回最近一次ADC1规则组的转换结果
+..\HARDWARE\ADC\adc.c: 11 warnings, 6 errors
+compiling lcd.c...
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+assembling startup_stm32f10x_hd.s...
+compiling core_cm3.c...
+compiling misc.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+"..\OBJ\ADC.axf" - 6 Error(s), 11 Warning(s).
+Target not created.
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>
