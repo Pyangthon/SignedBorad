@@ -75,7 +75,7 @@ namespace serialPort_Bord
         /// </summary>
         /// <param name="bytes"></param>
         /// <returns></returns>
-        public  byte[] CRC16_Check(byte[] bytes)
+        public byte[] CRC16_Check(byte[] bytes)
         {
             //计算并填写CRC校验码
             int crc = 0xffff;
@@ -113,7 +113,7 @@ namespace serialPort_Bord
             return newByte;
         }
 
-        
+
         /// <summary>
         /// 获取CRC16校验值
         /// </summary>
@@ -126,7 +126,7 @@ namespace serialPort_Bord
             ushort crc = 0xFFFF;//初值
             for (i = 0; i < crcLen; i++)
             {
-                crc =  Convert.ToUInt16((crc >> 8) ^ CRC16R_A001_Table[(crc & 0xFF) ^ crcBuff[i]]);
+                crc = Convert.ToUInt16((crc >> 8) ^ CRC16R_A001_Table[(crc & 0xFF) ^ crcBuff[i]]);
             }
             return crc;
         }
@@ -137,7 +137,7 @@ namespace serialPort_Bord
         /// <param name="serArr"></param>原数组
         /// <returns>校验是否成功 true 成功 false 失败</returns>
         public bool CRC16_Check(byte[] serArr, int Len)
-        { 
+        {
             if (serArr[1] != Len)   // 判断数据长度是否正确
             {
                 return false;       // 不正常则返回失败
@@ -148,7 +148,7 @@ namespace serialPort_Bord
             byte[] Check_Arr = new byte[2];                     // 创建2字节byte数组用于存放校验位
             Check_Arr[0] = Convert.ToByte(CrcValve >> 8);       // 获取校验位高8位
             Check_Arr[1] = Convert.ToByte(CrcValve & 0xFF);     // 获取校验位低8位
-            
+
             // 判断校验位是否相等
             byte[] srcCheck_Arr = new byte[2];
             Array.Copy(serArr, Len - 3, srcCheck_Arr, 0, 2);
@@ -221,7 +221,7 @@ namespace serialPort_Bord
             byte[] buf = new byte[Len];
             for (int i = 0; i < Len; i++)
             {
-                buf[i] = Convert.ToByte(uintArr[Len - 1 - i ]);
+                buf[i] = Convert.ToByte(uintArr[Len - 1 - i]);
             }
             return buf;
         }

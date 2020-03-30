@@ -68,12 +68,16 @@ namespace serialPort_Bord
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.TableNumConfig_TextBox = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
             this.SystemTag_Lable = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.TableNumConfig_Confirm_Button = new System.Windows.Forms.Button();
+            this.TableNum_Cancel_Button = new System.Windows.Forms.Button();
             this.CloseValve_PictureBox = new System.Windows.Forms.PictureBox();
             this.OPenValve_PictureBox = new System.Windows.Forms.PictureBox();
             this.HeadWare_PictureBox = new System.Windows.Forms.PictureBox();
@@ -100,10 +104,7 @@ namespace serialPort_Bord
             this.GetIP_Button = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.Rece_HexCheckBox = new System.Windows.Forms.CheckBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.TableNumConfig_TextBox = new System.Windows.Forms.TextBox();
-            this.TableNumConfig_Confirm_Button = new System.Windows.Forms.Button();
-            this.TableNum_Cancel_Button = new System.Windows.Forms.Button();
+            this.AutoAdd_CheckBox = new System.Windows.Forms.CheckBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -488,6 +489,22 @@ namespace serialPort_Bord
             this.tabPage2.Text = "修改配置";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // TableNumConfig_TextBox
+            // 
+            this.TableNumConfig_TextBox.Location = new System.Drawing.Point(424, 38);
+            this.TableNumConfig_TextBox.Name = "TableNumConfig_TextBox";
+            this.TableNumConfig_TextBox.Size = new System.Drawing.Size(67, 21);
+            this.TableNumConfig_TextBox.TabIndex = 28;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(422, 14);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(53, 12);
+            this.label19.TabIndex = 27;
+            this.label19.Text = "表号长度";
+            // 
             // SystemTag_Lable
             // 
             this.SystemTag_Lable.AutoSize = true;
@@ -541,6 +558,28 @@ namespace serialPort_Bord
             this.label9.Size = new System.Drawing.Size(17, 12);
             this.label9.TabIndex = 22;
             this.label9.Text = "mA";
+            // 
+            // TableNumConfig_Confirm_Button
+            // 
+            this.TableNumConfig_Confirm_Button.Location = new System.Drawing.Point(424, 63);
+            this.TableNumConfig_Confirm_Button.Name = "TableNumConfig_Confirm_Button";
+            this.TableNumConfig_Confirm_Button.Size = new System.Drawing.Size(41, 23);
+            this.TableNumConfig_Confirm_Button.TabIndex = 20;
+            this.TableNumConfig_Confirm_Button.Tag = "4";
+            this.TableNumConfig_Confirm_Button.Text = "确认";
+            this.TableNumConfig_Confirm_Button.UseVisualStyleBackColor = true;
+            this.TableNumConfig_Confirm_Button.Click += new System.EventHandler(this.ConfigButton_Click);
+            // 
+            // TableNum_Cancel_Button
+            // 
+            this.TableNum_Cancel_Button.Location = new System.Drawing.Point(471, 63);
+            this.TableNum_Cancel_Button.Name = "TableNum_Cancel_Button";
+            this.TableNum_Cancel_Button.Size = new System.Drawing.Size(41, 23);
+            this.TableNum_Cancel_Button.TabIndex = 21;
+            this.TableNum_Cancel_Button.Tag = "5";
+            this.TableNum_Cancel_Button.Text = "取消";
+            this.TableNum_Cancel_Button.UseVisualStyleBackColor = true;
+            this.TableNum_Cancel_Button.Click += new System.EventHandler(this.ConfigButton_Click);
             // 
             // CloseValve_PictureBox
             // 
@@ -718,6 +757,7 @@ namespace serialPort_Bord
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.AutoAdd_CheckBox);
             this.groupBox1.Controls.Add(this.TableNumber_TextBox);
             this.groupBox1.Controls.Add(this.SubIPAddress_MaskedTextBox);
             this.groupBox1.Controls.Add(this.MainIPAddress_MaskedTextBox);
@@ -824,43 +864,15 @@ namespace serialPort_Bord
             this.Rece_HexCheckBox.Text = "HEX";
             this.Rece_HexCheckBox.UseVisualStyleBackColor = true;
             // 
-            // label19
+            // AutoAdd_CheckBox
             // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(422, 14);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(53, 12);
-            this.label19.TabIndex = 27;
-            this.label19.Text = "表号长度";
-            // 
-            // TableNumConfig_TextBox
-            // 
-            this.TableNumConfig_TextBox.Location = new System.Drawing.Point(424, 38);
-            this.TableNumConfig_TextBox.Name = "TableNumConfig_TextBox";
-            this.TableNumConfig_TextBox.Size = new System.Drawing.Size(67, 21);
-            this.TableNumConfig_TextBox.TabIndex = 28;
-            // 
-            // TableNumConfig_Confirm_Button
-            // 
-            this.TableNumConfig_Confirm_Button.Location = new System.Drawing.Point(424, 63);
-            this.TableNumConfig_Confirm_Button.Name = "TableNumConfig_Confirm_Button";
-            this.TableNumConfig_Confirm_Button.Size = new System.Drawing.Size(41, 23);
-            this.TableNumConfig_Confirm_Button.TabIndex = 20;
-            this.TableNumConfig_Confirm_Button.Tag = "4";
-            this.TableNumConfig_Confirm_Button.Text = "确认";
-            this.TableNumConfig_Confirm_Button.UseVisualStyleBackColor = true;
-            this.TableNumConfig_Confirm_Button.Click += new System.EventHandler(this.ConfigButton_Click);
-            // 
-            // TableNum_Cancel_Button
-            // 
-            this.TableNum_Cancel_Button.Location = new System.Drawing.Point(471, 63);
-            this.TableNum_Cancel_Button.Name = "TableNum_Cancel_Button";
-            this.TableNum_Cancel_Button.Size = new System.Drawing.Size(41, 23);
-            this.TableNum_Cancel_Button.TabIndex = 21;
-            this.TableNum_Cancel_Button.Tag = "5";
-            this.TableNum_Cancel_Button.Text = "取消";
-            this.TableNum_Cancel_Button.UseVisualStyleBackColor = true;
-            this.TableNum_Cancel_Button.Click += new System.EventHandler(this.ConfigButton_Click);
+            this.AutoAdd_CheckBox.AutoSize = true;
+            this.AutoAdd_CheckBox.Location = new System.Drawing.Point(6, 54);
+            this.AutoAdd_CheckBox.Name = "AutoAdd_CheckBox";
+            this.AutoAdd_CheckBox.Size = new System.Drawing.Size(48, 28);
+            this.AutoAdd_CheckBox.TabIndex = 25;
+            this.AutoAdd_CheckBox.Text = "表号\r\n自增";
+            this.AutoAdd_CheckBox.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -983,6 +995,7 @@ namespace serialPort_Bord
         private System.Windows.Forms.TextBox TableNumConfig_TextBox;
         private System.Windows.Forms.Button TableNumConfig_Confirm_Button;
         private System.Windows.Forms.Button TableNum_Cancel_Button;
+        private System.Windows.Forms.CheckBox AutoAdd_CheckBox;
     }
 }
 

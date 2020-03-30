@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO.Ports;
+using System.Text;
 using System.Windows.Forms;
 
 namespace serialPort_Bord
@@ -32,7 +29,7 @@ namespace serialPort_Bord
                     if (hexArr.Length % 2 != 0)  // 单独处理最后一位
                     {
                         data[0] = hexArr[hexArr.Length - 1];    // 发送最后一位
-                        serialPort.Write(data, 0, 1);           
+                        serialPort.Write(data, 0, 1);
                     }
                     return SendData_Typedef.SendComp;
                 }
@@ -140,7 +137,7 @@ namespace serialPort_Bord
                 for (int i = 0; i < Len / 2; i++)
                 {
                     Arr[i] = bit % t;
-                    tempArr[i] = Convert.ToString(Arr[i]);                   
+                    tempArr[i] = Convert.ToString(Arr[i]);
                     arr[i] = Convert.ToUInt16(tempArr[i], 16);
                     bit /= t;
                 }
@@ -154,7 +151,7 @@ namespace serialPort_Bord
                 for (int i = 0; i < Len / 2 + 1; i++)
                 {
                     Arr[i] = bit % t;
-                    tempArr[i] = Convert.ToString(Arr[i]);                    
+                    tempArr[i] = Convert.ToString(Arr[i]);
                     arr[i] = Convert.ToUInt16(tempArr[i], 16);
                     bit /= t;
                 }
@@ -272,4 +269,4 @@ namespace serialPort_Bord
             return temp.ToString().Substring(0, 1).Equals("0") ? temp.ToString().Substring(1) : temp.ToString();
         }
     }
-}
+}                   

@@ -1,12 +1,9 @@
-﻿using System;
-using System.Text;
-using System.Windows.Forms;
-using System.IO.Ports;
-using System.Text.RegularExpressions;
-using serialPort_Bord.Properties;
+﻿using serialPort_Bord.Properties;
+using System;
 using System.Configuration;
+using System.IO.Ports;
 using System.Net;
-using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace serialPort_Bord
 {
@@ -21,12 +18,13 @@ namespace serialPort_Bord
             public bool CurrentTestDet;         // 电流测试指令(判断当前接收的内容是否为电流值)
         }
 
-        const byte ConfigTableNum   = 0XFB;     // 配置表号
-        const byte ConfigIPAndPort  = 0XFA;     // 配置IP和端口
-        const byte GetIPAndPortDet  = 0XFC;     // 获取IP和端口
-        const byte ReturnSuccess    = 0XFF;     // 返回成功
-        const byte FrameTail        = 0X16;     // 帧尾
-        const byte HeadWareDet      = 0XFD;     // 测试硬件(按键和阀门)
+        const byte ConfigTableNum = 0XFB;     // 配置表号
+        const byte ConfigIPAndPort = 0XFA;     // 配置IP和端口
+        const byte GetIPAndPortDet = 0XFC;     // 获取IP和端口
+        const byte ReturnSuccess = 0XFF;     // 返回成功
+        const byte FrameTail = 0X16;     // 帧尾
+        const byte HeadWareDet = 0XFD;     // 测试硬件(按键和阀门)
+
 
 
         CurrentTestRangeTypeDef CurrentTestStruct;  // 实例化电流测试结构体
@@ -75,11 +73,11 @@ namespace serialPort_Bord
         private void Port_ReceData(object sender, EventArgs e)
         {
             SerialPort_Entity.Encoding = System.Text.Encoding.GetEncoding("GB2312");        // 将串口数据编码格式修改为GB2312
-            if(!Rece_HexCheckBox.Checked)       // 判断当前接收是否为接收16进制
-            { 
+            if (!Rece_HexCheckBox.Checked)       // 判断当前接收是否为接收16进制
+            {
                 string str = SerialPort_Entity.ReadExisting();      // 读取串口数据并存储到str字符串中
                 Dis_Rece_TextBox.AppendText(str);                   // 添加展示到接收框中
-                if (CurrentTestStruct.CurrentTestDet == true)       
+                if (CurrentTestStruct.CurrentTestDet == true)
                 {
                     JudgeCurrentValve(str);                 // 判段电流是否在指定范围内
                 }
@@ -97,7 +95,7 @@ namespace serialPort_Bord
         /// 串口接收16进制数据
         /// </summary>
         /// <param name="serialPort"></param>串口名
-        public void Port_Rece_HexData(SerialPort serialPort)    
+        public void Port_Rece_HexData(SerialPort serialPort)
         {
             int len = serialPort.BytesToRead;       //获取可以读取的字节数
             byte[] buff = new byte[len];            //创建缓存数据数组
@@ -109,8 +107,8 @@ namespace serialPort_Bord
                     Array.Copy(buff, 0, ReceBuffer, BuffPtr, len);  // 将当前串口收内容存到缓存区
                     BuffPtr += len;
                 }
-                if(buff.Length != 0)
-                { 
+                if (buff.Length != 0)
+                {
                     if (buff[buff.Length - 1] == FrameTail)      // 判断最后一个字节是否为0x16
                     {
                         Check_Data();       // 校验数据
@@ -128,7 +126,7 @@ namespace serialPort_Bord
         /// </summary>
         public void Check_Data()
         {
-            lock(ReceBuffer)        // 锁住该数组，保证数组在使用时不会被再次使用
+            lock (ReceBuffer)        // 锁住该数组，保证数组在使用时不会被再次使用
             {
                 for (int i = 0; i < BuffPtr; i++)   // 输出接收到的数据
                 {
@@ -147,7 +145,7 @@ namespace serialPort_Bord
                         if (ReceBuffer[10] == ReturnSuccess) // 解析指令结果
                         {
                             byte TableLen = 0;
-                            if(TableNumBitLength % 2 == 0)
+                            if (TableNumBitLength % 2 == 0)
                             {
                                 TableLen = (byte)(TableNumBitLength / 2);
                             }
@@ -160,6 +158,7 @@ namespace serialPort_Bord
                             TableNum_PictureBox.Image = Resources.Acces;
                             string TableNumStr = SerialPortHelper.BCDToString(temp);
                             Dis_Rece_TextBox.AppendText("表号修改成功,表号为: " + TableNumStr + "\r\n");
+                            TableNumAutoAdd(AutoAdd_CheckBox, TableNumber_TextBox);
                         }
                         else
                         {
@@ -194,6 +193,17 @@ namespace serialPort_Bord
                 BuffPtr = 0;
             }
         }
+        public void TableNumAutoAdd(CheckBox checkBox, TextBox textbox)
+        {
+            if (!checkBox.Checked || checkBox.Text == "")
+            {
+                return;
+            }
+
+            uint tableNum = Convert.ToUInt32(textbox.Text);
+            textbox.Text = Convert.ToString(tableNum + 1);
+        }
+
         /// <summary>
         /// 在数组中获取IP地址和端口号并做输出
         /// </summary>
@@ -201,7 +211,7 @@ namespace serialPort_Bord
         public void GetIPAndPort(byte[] Arr)
         {
             byte[] MainIP = new byte[4];            // 主IP
-            byte[] SubIP  = new byte[4];            // 备用IP
+            byte[] SubIP = new byte[4];            // 备用IP
             byte[] PortNumArr = new byte[2];        // 端口号
             Array.Copy(Arr, 10, MainIP, 0, 4);      // 获取主IP
             Array.Copy(Arr, 14, SubIP, 0, 4);       // 获取备用IP
@@ -215,7 +225,7 @@ namespace serialPort_Bord
 
             ushort PortNum = BitConverter.ToUInt16(PortNumArr, 0);          // 将端口号数组转换成十进制数据
             Dis_Rece_TextBox.AppendText("端口号为" + PortNum + "\r\n");     // 在文本框中输出端口号
-            
+
         }
 
         /// <summary>
@@ -275,7 +285,7 @@ namespace serialPort_Bord
             CurrentTestStruct.CurrentTestDet = false;
         }
 
-        
+
 
         /// <summary>
         /// 串口配置写入
@@ -368,7 +378,7 @@ namespace serialPort_Bord
         /// <param name="e"></param>
         private void SerialNum_ComboBox_Click(object sender, EventArgs e)
         {
-            SerialNum_ComboBox.Items.Clear();       
+            SerialNum_ComboBox.Items.Clear();
             SerialPortHelper.GetSerialName(SerialNum_ComboBox);
         }
 
@@ -409,9 +419,9 @@ namespace serialPort_Bord
             Rece_HexCheckBox.Checked = false;
             SerialPortHelper.SendHex(SerialPort_Entity, TestDetArr);
         }
-        
 
-        
+
+
 
         /// <summary>
         /// 清除接收区内容
@@ -441,15 +451,15 @@ namespace serialPort_Bord
             {
                 CloseValve_PictureBox.Image = Resources.Wait;
             }
-            if(TableNum_PictureBox.Image != Resources.Wait)
+            if (TableNum_PictureBox.Image != Resources.Wait)
             {
                 TableNum_PictureBox.Image = Resources.Wait;
             }
-            if(IP_Port_PictureBox.Image != Resources.Wait)
+            if (IP_Port_PictureBox.Image != Resources.Wait)
             {
                 IP_Port_PictureBox.Image = Resources.Wait;
             }
-            if(GetIP_PictureBox.Image != Resources.Wait)
+            if (GetIP_PictureBox.Image != Resources.Wait)
             {
                 GetIP_PictureBox.Image = Resources.Wait;
             }
@@ -487,7 +497,7 @@ namespace serialPort_Bord
                 MessageBox.Show("未打开串口", "提示");
             }
         }
-        
+
         /// <summary>
         /// 清除发送数据文本框的内容
         /// </summary>
@@ -511,7 +521,7 @@ namespace serialPort_Bord
             }
 
         }
-       
+
 
         /// <summary>
         /// 串口状态更新定时器
@@ -555,7 +565,7 @@ namespace serialPort_Bord
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void TableNnumber_Confirm_Button_Click(object sender, EventArgs e)
-        {     
+        {
             try
             {
                 uint temp = Convert.ToUInt32(TableNumber_TextBox.Text);   // 这一句是为了试错，保证输入的标号为纯数字，不是数字直接跳到catch中
@@ -565,7 +575,7 @@ namespace serialPort_Bord
                     return;
                 }
                 byte[] TableNumber = SerialPortHelper.Str2Bcd(TableNumber_TextBox.Text);    // 将字符串转成BCD码
-                byte[] ConfTabNum = new byte[13+ TableNumber.Length];  // 根据表号的长度定义数组的长度      
+                byte[] ConfTabNum = new byte[13 + TableNumber.Length];  // 根据表号的长度定义数组的长度      
                 ConDefValve(ConfTabNum);        // 写入默认数据
                 ConfTabNum[9] = ConfigTableNum;           // 写入设置表号指令
                 Crc16.GetDataCrc16(TableNumber, ConfTabNum);             // 获取数据和CRC16校验
@@ -638,7 +648,7 @@ namespace serialPort_Bord
                 return;
             }
             else
-            { 
+            {
                 if (Crc16.Str_IsEmpty(MainIpAddress) != true)     // 判断主IP地址是否为空，为空则跳过
                 {
                     // 判断获取IP地址是否成功
@@ -688,7 +698,7 @@ namespace serialPort_Bord
         private void IPAddress_MaskedTextBox_Click(object sender, EventArgs e)
         {
             MaskedTextBox maskedTextBox = (MaskedTextBox)sender;
-            
+
             if (Crc16.Str_IsEmpty(maskedTextBox.Text) == true)       // 如果字符串为空，则将当前光标移到开始处
             {
                 maskedTextBox.SelectionStart = 0;
@@ -761,7 +771,7 @@ namespace serialPort_Bord
                         // 将通道1的最大，最小值写到全局变量中
                         CurrentTestStruct.Chan1MaxValve = Convert.ToDouble(Chan1MaxValve_TextBox.Text);
                         CurrentTestStruct.Chan1MinValve = Convert.ToDouble(Chan1MinValve_TextBox.Text);
-                        
+
                         if (CurrentTestStruct.Chan1MaxValve < CurrentTestStruct.Chan1MinValve)
                         {
                             SystemTag_Lable.Text = "修改失败";
@@ -784,7 +794,7 @@ namespace serialPort_Bord
 
                     case 4: // 将表号配置位数写入存档
                         TableNumBitLength = Convert.ToByte(TableNumConfig_TextBox.Text);
-                        if(TableNumBitLength <= 0)
+                        if (TableNumBitLength <= 0)
                         {
                             SystemTag_Lable.Text = "修改失败";
                             MessageBox.Show("表号位数必须大于0", "ERROR");
